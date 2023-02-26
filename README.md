@@ -19,4 +19,5 @@ Started this repository to take notes while I go through the Odin project for le
 ### Basic Data Types
 
 - Everything is an object in Ruby; numbers (integers and floats), strings, symbols and Booleans (`true`, `false` and `nil`)
-- 
+- There exists useful methods that can be used for on the basic object data types as well.
+- Escape characters like `\n` will only work within double quotation marks and string interpolations only work within double quotation as well.
