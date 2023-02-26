@@ -21,3 +21,5 @@ Started this repository to take notes while I go through the Odin project for le
 - Everything is an object in Ruby; numbers (integers and floats), strings, symbols and Booleans (`true`, `false` and `nil`)
 - There exists useful methods that can be used for on the basic object data types as well.
 - Escape characters like `\n` will only work within double quotation marks and string interpolations only work within double quotation as well.
+- Strings can be changed, every time it changes - Ruby stores it in memory even if an existing string with the same value already exists. Symbols are only stored in memory once - making them faster in some situations.
+- Common application is using symbols as keys in hashes.
