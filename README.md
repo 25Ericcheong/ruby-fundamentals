@@ -38,3 +38,9 @@ Started this repository to take notes while I go through the Odin project for le
 ### Exceptions
 
 - Syntactic structure; `begin`, `rescue` and `end`. Examples of ways to utilize exceptions can be found in the exception folder.
+
+### Conditional Logic
+
+- Falsy values in Ruby are `nil` and `false`. 
+- `.eql?` checks whether both values are the exact same object in memory. Integers would point to the same object in memory but this will not be the case for strings because strings can be stored as efficient as numbers in memory.
+- Spaceship operator and `unless` is quite a cool thing to note and may use. There is also the utilization of `case` with `then` which can be used to assign to a variable too.
