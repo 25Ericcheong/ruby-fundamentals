@@ -34,3 +34,7 @@ Started this repository to take notes while I go through the Odin project for le
 - Do not use `$global_variables` and `@@class_variables` are rarely needed and easily misused. 
 - Variables cannot be changed within method definitions while variables can be changed within blocks `{}`. 
 - Note, not all `do...end` imply a block. A `do...end` on a `for` or `while` loop is not a block. An example of a loop that utilizes method invocation is `3.times` which essentially means that if we initialize a variable within in (not defined outside) and attempt to access it; an error will occur.
+
+### Exceptions
+
+- Syntactic structure; `begin`, `rescue` and `end`. Examples of ways to utilize exceptions can be found in the exception folder.
