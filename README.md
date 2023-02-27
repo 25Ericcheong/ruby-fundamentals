@@ -25,3 +25,12 @@ Started this repository to take notes while I go through the Odin project for le
 - Common application is using symbols as keys in hashes.
 - `nil` stands for nothing. `.nil?` can be used to determine if a variable is empty or not. If it is used in an `if` statement, it is treated as `false`. Although this may be the case, do not treat `nil` as the same as `false`. 
 - Two different types of data types cannot be concatenated. Instead, an error will be thrown.
+
+
+### Variables
+
+- Assigning something to a variable is having it stored in memory - effectively a reference or pointer. Note that if we assigning one variable to another and we utilize `.upcase!` on the original variable - both variables will have the effect. Worth noting this side effect as a normal `.upcase` would not introduce this side affect. 
+- Worth noting that reassigning the first variable (after assigning it to another variable) will not cause the other variable to be affected.
+- Do not use `$global_variables` and `@@class_variables` are rarely needed and easily misused. 
+- Variables cannot be changed within method definitions while variables can be changed within blocks `{}`. 
+- Note, not all `do...end` imply a block. A `do...end` on a `for` or `while` loop is not a block. An example of a loop that utilizes method invocation is `3.times` which essentially means that if we initialize a variable within in (not defined outside) and attempt to access it; an error will occur.
