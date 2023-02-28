@@ -29,3 +29,11 @@ loop do
 end
 
 # puts x => doing this will cause an error because it is a method invocation
+
+
+
+# iterator example
+names.each do |name|
+    puts "#{x}. #{name}"
+    x += 1  
+end
