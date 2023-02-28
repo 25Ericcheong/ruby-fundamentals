@@ -13,11 +13,19 @@ for i in 0..5
 
 
 
-  # runs loop 5 times
-  5.times do 
-    puts "hello 5 times"
-  end
+# runs loop 5 times
+5.times do 
+puts "hello 5 times"
+end
 
 
 
-  5.upto(10) { |num| puts "#{num}" }
+5.upto(10) { |num| puts "#{num}" }
+
+
+loop do
+    x = 1
+    break
+end
+
+# puts x => doing this will cause an error because it is a method invocation
