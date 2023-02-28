@@ -10,3 +10,14 @@ puts "#{range2}"
 for i in 0..5
     puts "#{i} zombies incoming!"
   end
+
+
+
+  # runs loop 5 times
+  5.times do 
+    puts "hello 5 times"
+  end
+
+
+
+  5.upto(10) { |num| puts "#{num}" }

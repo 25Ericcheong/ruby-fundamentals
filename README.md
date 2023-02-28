@@ -48,3 +48,4 @@ Started this repository to take notes while I go through the Odin project for le
 ### Loops
 
 - `loop` probably won't be seen used as much. If it is used, probably a better way. `until` is like `while` but it will continue as long as condition is `false`. `for i in 0..5` - a for loop can be used to iterate through a collection type data.
+- `times loop` can be executed by `5.times do` which essentially executes loop 5 times. THere are also `1.upto(10)` which runs 1 up to 10 loops (making it 11 times) which is a cool shortcut way (there is also `downto` which does the same thing but opposite)
