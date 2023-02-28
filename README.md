@@ -44,3 +44,7 @@ Started this repository to take notes while I go through the Odin project for le
 - Falsy values in Ruby are `nil` and `false`. 
 - `.eql?` checks whether both values are the exact same object in memory. Integers would point to the same object in memory but this will not be the case for strings because strings can be stored as efficient as numbers in memory.
 - Spaceship operator and `unless` is quite a cool thing to note and may use. There is also the utilization of `case` with `then` which can be used to assign to a variable too.
+
+### Loops
+
+- `loop` probably won't be seen used as much. If it is used, probably a better way. `until` is like `while` but it will continue as long as condition is `false`. `for i in 0..5` - a for loop can be used to iterate through a collection type data.
