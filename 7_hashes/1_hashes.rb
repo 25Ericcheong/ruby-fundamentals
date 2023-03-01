@@ -32,6 +32,11 @@ japanese_cars = {
 
 
 
+# will return any key value pair that meets condition
+japanese_cars.select { |k,v| (k == "Bob") || (v == 19) }
+
+
+
 # cool hash function trick
 def greeting(name, options = {})
     if options.empty?
@@ -46,4 +51,4 @@ greeting("Bob")
 greeting("Bob", {age: 62, city: "New York City"})
 
 # this can also be done
-greeting("Bob", age: 62, city: "New York City") # without the use of curly braces
+greeting("Bob", :age => 62, city: "New York City") # without the use of curly braces
