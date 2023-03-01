@@ -54,4 +54,9 @@ Started this repository to take notes while I go through the Odin project for le
 
 ### Arrays
 
-- Note that not all methods will directly affect original array object. An example would be `uniq`; if you'd like to permanently change original object - you can do `.uniq!` instead. 
+- Note that not all methods will directly affect original array object. An example would be `uniq`; if you'd like to permanently change original object - you can do `.uniq!` instead. This does not apply to the rest of the existing methods. It is exclusive for `uniq`.
+
+### Hashes
+
+- Basically a dictionary. `.fetch` will raise an error if you try to access a value without a key but if you try to access a value with pair of square brackets with a key that doesn't exist you will get a `nil`. Could set a default value as a second parameter with `.fetch` if key doesn't exist. 
+- Strings can be used as strings but usually, `symbols` are used instead - `:key`. This is the case because it is more performant than strings in Ruby. 
