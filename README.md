@@ -59,4 +59,4 @@ Started this repository to take notes while I go through the Odin project for le
 ### Hashes
 
 - Basically a dictionary. `.fetch` will raise an error if you try to access a value without a key but if you try to access a value with pair of square brackets with a key that doesn't exist you will get a `nil`. Could set a default value as a second parameter with `.fetch` if key doesn't exist. 
-- Strings can be used as strings but usually, `symbols` are used instead - `:key`. This is the case because it is more performant than strings in Ruby. 
+- Strings can be used as strings but usually, `symbols` are used instead - `:key`. This is the case because it is more performant than strings in Ruby. The rocket syntax symbol is the cleaner way of creating hash key symbols.
