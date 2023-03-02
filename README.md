@@ -60,3 +60,9 @@ Started this repository to take notes while I go through the Odin project for le
 
 - Basically a dictionary. `.fetch` will raise an error if you try to access a value without a key but if you try to access a value with pair of square brackets with a key that doesn't exist you will get a `nil`. Could set a default value as a second parameter with `.fetch` if key doesn't exist. 
 - Strings can be used as strings but usually, `symbols` are used instead - `:key`. This is the case because it is more performant than strings in Ruby. The rocket syntax symbol is the cleaner way of creating hash key symbols.
+- Note: When calling a method, if a hash is the last argument entered, you can skip squiggly braces. Eg. `some_object.some_method argument1, argument2, :param1 => value1, :param2 => value2`.
+
+### Methods
+
+- 'Pound' signs (`#`) are used as conventions for writing out Ruby instance methods; can be used to write out full name of an instance method or just method name. 
+- Note. Ruby offers implicit return for methods. Meaning, return can be excluded and Ruby assumes that the last expression evaluated will need to be returned.
