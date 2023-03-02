@@ -66,3 +66,6 @@ Started this repository to take notes while I go through the Odin project for le
 
 - 'Pound' signs (`#`) are used as conventions for writing out Ruby instance methods; can be used to write out full name of an instance method or just method name. 
 - Note. Ruby offers implicit return for methods. Meaning, return can be excluded and Ruby assumes that the last expression evaluated will need to be returned.
+- Predicate methods are methods with `?` at the end of the method name. Eg. `even?`. Methods like these would return a `Boolean`. 
+- Parameters are optional; can sometimes be `say "hi"` instead of `say(hi)` which is worth noting. 
+- Note the difference between method invocation with a block and method definition. Cool information: Ruby is a pass-by-value and pass-by-reference language. 
