@@ -20,3 +20,30 @@ end
 friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
 
 friends.map { |friend| friend.upcase }
+
+
+
+# with hashes, will need to set up block variables for both key and variables
+responses = { 'Sharon' => 'yes', 'Leo' => 'no', 'Leila' => 'no', 'Arun' => 'yes' }
+responses.select { |person, response| response == 'yes'}
+
+
+
+my_numbers = [5, 6, 7, 8]
+
+# by default, initial value of the accumulator; in this case 'sum' will be the first element in collection
+my_numbers.reduce { |sum, number| sum + number } #=> 26
+
+# we can set initial value of accumulator by doing so
+my_numbers.reduce(1000) { |sum, number| sum + number } #=> 1026
+
+
+
+# can even create a new hash as the initial value like so below! This is a way to count votes to go to somewhere for example
+votes = ["Bob's Dirty Burger Shack", "St. Mark's Bistro", "Bob's Dirty Burger Shack"]
+
+votes.reduce(Hash.new(0)) do |result, vote|
+  result[vote] += 1
+  result
+end
+#=> {"Bob's Dirty Burger Shack"=>2, "St. Mark's Bistro"=>1}
