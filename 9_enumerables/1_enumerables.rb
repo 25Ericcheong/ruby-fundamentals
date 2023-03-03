@@ -47,3 +47,9 @@ votes.reduce(Hash.new(0)) do |result, vote|
   result
 end
 #=> {"Bob's Dirty Burger Shack"=>2, "St. Mark's Bistro"=>1}
+
+
+
+names = ["James", "Bob", "Joe", "Mark", "Jim"]
+names.group_by{|name| name.length}
+#=> {5=>["James"], 3=>["Bob", "Joe", "Jim"], 4=>["Mark"]} 
