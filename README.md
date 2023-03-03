@@ -87,3 +87,5 @@ Started this repository to take notes while I go through the Odin project for le
 ### Nested Collection
 
 - Instead of a `NoMethodError` being thrown when trying to access a nonexistent nested element. We can use `#dig` instead which will return a `nil` if index does not exist instead of throwing an exception.
+- When created a nested array, like so `Array.new(3, Array.new(4))`; the nested array is referenced to one and another. Meaning, the elements within each nested array will be changed altogether when any of the arrays' elements' are modified. This behavior will be the same for all mutable objects - strings, hashes, etc.
+- To prevent such a scenario from happening, should include blocks instead as such `Array.new(3) { Array.new(2) }`.
