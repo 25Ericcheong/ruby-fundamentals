@@ -83,3 +83,7 @@ Started this repository to take notes while I go through the Odin project for le
 ### Predicate Enumerable
 
 - Predicate methods just means methods with `?` at the end of hte method signifying a `boolean` as the output of the method.
+
+### Nested Collection
+
+- Instead of a `NoMethodError` being thrown when trying to access a nonexistent nested element. We can use `#dig` instead which will return a `nil` if index does not exist instead of throwing an exception.
