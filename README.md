@@ -69,3 +69,12 @@ Started this repository to take notes while I go through the Odin project for le
 - Predicate methods are methods with `?` at the end of the method name. Eg. `even?`. Methods like these would return a `Boolean`. 
 - Parameters are optional; can sometimes be `say "hi"` instead of `say(hi)` which is worth noting. 
 - Note the difference between method invocation with a block and method definition. Cool information: Ruby is a pass-by-value and pass-by-reference language. 
+
+### Debugging
+
+- Instead of using `puts`, more ideal would to use `p` instead which is a combination of `puts` and `inspect`. Gem to use would be `pry-byebug`. My case; I will install it on vscode instead of debugging via terminal.
+
+### Basic Enumerable Methods
+
+- Enumerables - set of convenient built-in methods in Ruby included as part of both arrays and hashes.
+- Worth noting that `.each` does not mutate original array. `.map` may be preferred over `.each` depending on what needs to be achieved. 
