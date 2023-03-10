@@ -31,4 +31,30 @@ def caesar_cipher(string, shift_factor)
     return string_successor.join(" ")
 end
 
+def caesar_cipher_ord(string, shift_factor)
+    string_successor = ""
+    (lower, upper) = [0, 0]
+
+    string.each_char { |c|
+        puts c
+        code = c.ord
+        puts code
+
+        case code
+        when 48..57 then (lower, upper) = [48, 57]
+        when 97..122 then (lower, upper) = [97, 122]
+        when 65..90 then (lower, upper) = [65, 90]
+        else string_successor += c
+        end
+
+        if (code + shift_factor > upper) && (upper != 0) 
+            code = code - upper + lower - 1
+            string_successor += code.chr
+        end
+    }
+
+    return string_successor
+end
+
 p caesar_cipher("helloz man!", 3)
+puts caesar_cipher_ord("helloz man!", 3)
