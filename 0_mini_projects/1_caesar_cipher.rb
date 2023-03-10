@@ -15,27 +15,20 @@ end
 def caesar_cipher(string, shift_factor)
     string_partition = string.split(" ")
 
-    string_partition.select do |item|
-
-        puts item
-
+    string_successor = string_partition.map do |item|  
         item_successor = ""
         item.each_char { |c|
-
-            unless is_alphanumeric?(c)
-                item_successor += c
-                next
-            end
-
-            shift_factor.times do
-                c = c.succ[-1]
+            if is_alphanumeric?(c)
+                shift_factor.times do
+                    c = c.succ[-1]
+                end                
             end
             item_successor += c
         }
-
-        puts item_successor
-
+        item = item_successor
     end
+
+    return string_successor.join(" ")
 end
 
-caesar_cipher("helloz man!", 3)
+p caesar_cipher("helloz man!", 3)

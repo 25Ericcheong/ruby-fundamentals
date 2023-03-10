@@ -77,7 +77,7 @@ Started this repository to take notes while I go through the Odin project for le
 ### Basic Enumerable Methods
 
 - Enumerables - set of convenient built-in methods in Ruby included as part of both arrays and hashes.
-- Worth noting that `.each` does not mutate original array. `.map` may be preferred over `.each` depending on what needs to be achieved. Enumerables like `#map` and `#select` (also known as collect) return new arrays but don't modify the arrays that they were called on.
+- Worth noting that `.each` does not mutate original array. `.map` may be preferred over `.each` depending on what needs to be achieved. Very important to realize this - learnt this while doing first mini project (`1_caesar_ciphers`). Enumerables like `#map` and `#select` (also known as collect) return new arrays but don't modify the arrays that they were called on.
 - To modify the arrays that they were called on, simple call `#map!` instead (same for select). These are called `bang methods`. Avoid using them to prevent bugs from arising.
 
 ### Predicate Enumerable
