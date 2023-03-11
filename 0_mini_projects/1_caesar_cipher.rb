@@ -9,6 +9,7 @@ def is_alphanumeric?(char)
 
     # 65 is ASCII code of A
     # 90 is ASCII code of Z
+    
     (48 <= code && code <= 57) || (97 <= code && 122 <= code) || (65 <= code && 90 <= code)
 end
 
