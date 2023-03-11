@@ -27,3 +27,28 @@ end
 
 puts even_odd(20)
 puts even_odd("Ruby")
+
+
+
+# note the differences about last expression being executed without return included in code
+# works
+def write_code(number_of_errors)
+    if number_of_errors > 1
+        mood = "Ask me later"
+    else
+        mood = "No Problem"
+    end  
+end
+
+# puts returns a nil and function will return nil instead of mood
+def broken_write_code(number_of_errors)
+    if number_of_errors > 1
+       mood = "Ask me later"
+    else
+       mood = "No Problem"
+    end  
+    puts "### mood = #{mood}"
+
+    # the fix is to do this
+    # mood <==== so that it returns mood
+end
