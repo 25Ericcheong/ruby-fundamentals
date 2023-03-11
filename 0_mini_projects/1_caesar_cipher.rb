@@ -33,9 +33,9 @@ end
 
 def caesar_cipher_ord(string, shift_factor)
     string_successor = ""
-    (lower, upper) = [0, 0]
 
     string.each_char { |c|
+        (lower, upper) = [0, 0]
         code = c.ord
 
         case code
@@ -44,13 +44,13 @@ def caesar_cipher_ord(string, shift_factor)
         when 65..90 then (lower, upper) = [65, 90]
         end
         
+        code_shifted = code + shift_factor
         if upper == 0
-            string_successor += c
-        elsif (code + shift_factor > upper) 
-            code = code - upper + lower - 1
             string_successor += code.chr
+        elsif (code_shifted > upper) 
+            string_successor += (code_shifted - upper + lower - 1).chr
         else
-            string_successor += code.chr
+            string_successor += code_shifted.chr
         end
     }
 
