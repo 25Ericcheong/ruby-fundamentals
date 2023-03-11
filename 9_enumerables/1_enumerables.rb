@@ -42,12 +42,12 @@ my_numbers.reduce(1000) { |sum, number| sum + number } #=> 1026
 # can even create a new hash as the initial value like so below! This is a way to count votes to go to somewhere for example
 votes = ["Bob's Dirty Burger Shack", "St. Mark's Bistro", "Bob's Dirty Burger Shack"]
 
-votes.reduce(Hash.new(0)) do |result, vote|
+count = votes.reduce(Hash.new(0)) do |result, vote|
   result[vote] += 1
   result
 end
 #=> {"Bob's Dirty Burger Shack"=>2, "St. Mark's Bistro"=>1}
-
+puts count
 
 
 names = ["James", "Bob", "Joe", "Mark", "Jim"]
